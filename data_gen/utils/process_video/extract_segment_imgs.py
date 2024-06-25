@@ -301,7 +301,7 @@ def extract_segment_job(
     del segmenter
     del seg_model
     seg_model = MediapipeSegmenter()
-    segmenter = vision.ImageSegmenter.create_from_options(seg_model.options)
+    # segmenter = vision.ImageSegmenter.create_from_options(seg_model.options)
     # nerf means that we extract only one video, so can enable multi-process acceleration
     multiprocess_enable = nerf and not force_single_process 
     try:
